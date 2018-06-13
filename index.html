@@ -2,92 +2,88 @@
 <!DOCTYPE html
 <html>
   <style>
-      body {
-           background: black url("https://en.wikipedia.org/wiki/File:Rotating_earth_(large).gif") repeat fixed center;
-    }
+    body {
+            background: black;
+            color: rgb(45, 45, 239);
+            padding: 10px;
+            font-family: arial;
+            background-image: url("https://en.wikipedia.org/wiki/File:Rotating_earth_(large).gif");
+            background-repeat: repeat;
+            background-position: center;
+        }
+        header {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        #all-contents {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* navigation menu */
+        nav {
+            background: black;
+            margin: 0 auto;
+            display: flex;
+            padding: 10px;
+        }
+        nav header {
+            display: flex;
+            align-items: center;
+            color: black;
+            flex: 1;
+        }
+        nav ul {
+            list-style-image: none;
+        }
+        nav li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        main {
+            background: lightblue;
+            display: flex;
+            }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar img {
+            width: 200px;
+        }
+        .content {
+            flex: .5;
+            padding: 15px;
+        }
+        .interests header {
+            font-size: .5em;
+            font-weight: normal;
+        }
   </style>
     <h1>Brynali's Link to the Interwebs</h1>
 
     <body>
-        <div id="all-contents"
-         <nav>
+        <div id="all-contents"></div>
+        <nav>
              <h3>Brynali needed a link to the Interwebs</h3>
-        <style>
-                body {
-                background: rgb(125, 198, 205);
-                color: rgb(45, 45, 45);
-                padding: 10px;
-                font-family: arial;
-            }
-            header {
-                font-size: 1.5em;
-                font-weight: bold;
-            }
-            #all-contents {
-                max-width: 800px;
-                margin: auto;
-            }
-    
-            /* navigation menu */
-            nav {
-                background: rgb(239, 80, 41);
-                margin: 0 auto;
-                display: flex;
-                padding: 10px;
-            }
-            nav header {
-                display: flex;
-                align-items: center;
-                color: rgb(255, 255, 255);
-                flex: 1;
-            }
-            nav ul {
-                list-style-image: none;
-            }
-            nav li {
-                display: inline-block;
-                padding: 0 10px;
-            }
-            nav a {
-                text-decoration: none;
-                color: #fff;
-            }
-            
-        </style>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-             </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
          </nav>
-         <style>
-              main {
-                background: rgb(245, 238, 219);
-                display: flex;
-            }
-            .sidebar {
-                margin-right: 25px;
-                padding: 10px;
-            }
-            .sidebar img {
-                width: 200px;
-            }
-            .content {
-                flex: .5;
-                padding: 15px;
-            }
-            .interests header {
-                font-size: .5em;
-                font-weight:auto;
-            }
-            </style>
             <main>
                 <div class="sidebar">
                     <img src="data:image/jpeg;base64,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">
                 </div>
                 
                 <div class="content">
-                <header>Brynali Marshall
+                    <header>Brynali Marshall</header>
                 </div>
-                <p>Student at Lee Magnet High<p
+                <p>Student at Lee Magnet High</p>
                 
             <section class="interests"
             <p>
